@@ -6,19 +6,11 @@
     #container
       #main
         #header
-          #about
-            hi there
-            %br
-            my name is James Ottaway
+          =haml(:about)
         #details
           =haml(:bio)
           =haml(:online)
-          %h2 contact me
-          #contactme
-            you can contact me nearly anywhere at
-            =email("james@ottaway.mp")
-            %br
-            including email, msn and google talk (to name a few)
+          =haml(:contactme)
       #footer
         &copy; James Ottaway,
         = Time.now.year
