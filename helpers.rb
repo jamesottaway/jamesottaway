@@ -7,7 +7,7 @@ helpers do
     {:rel => "openid.#{type}", :href => href}
   end
   
-  def email(address)
-    {:href => "mailto:#{address}"}
+  def email(address, text = address)
+    "<a href=''#{address}'>#{text}</a>"
   end
 end
