@@ -1,0 +1,71 @@
+html {
+	height: 100%;
+}
+
+body {
+	color: #272727;
+	font-family: Courier, monospace;
+}
+
+#bio, #work, #contactme {
+	line-height: 1.25;
+	padding-left: 15px;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+a {
+	color: #555555;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #111111;
+	text-decoration: underline;
+}
+
+#container {
+	width: 800px;
+	padding: 25px 0 0 50px;
+}
+
+#header {
+	font-size: 50px;
+}
+
+#details {
+	width: 600px;
+}
+
+#online {
+	width: 400px;
+	overflow: hidden;
+}
+
+#online ul {
+	list-style-type: none;
+}
+
+#online a {
+	display: block;
+	float: left;
+	margin: 5px;
+	position: relative;
+	width: 150px;
+}
+
+#footer {
+	float: right;
+	text-align: right;
+	width: 250px;
+	padding: 0px 5px 5px;
+	border-bottom: 1px dashed;
+	margin: 25px 0 25px;
+}
+
+ul {
+	margin-top: 0px;
+	padding-left: 15px;
+}
