@@ -33,6 +33,7 @@ a:hover {
 
 #header {
 	font-size: 50px;
+	padding-bottom: 25px;
 }
 
 #details {
@@ -40,7 +41,6 @@ a:hover {
 }
 
 #online {
-	width: 400px;
 	overflow: hidden;
 }
 

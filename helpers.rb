@@ -8,6 +8,6 @@ helpers do
   end
   
   def email(address, text = address)
-    "<a href=''#{address}'>#{text}</a>"
+    "<a href='#{address}'>#{text}</a>"
   end
 end
