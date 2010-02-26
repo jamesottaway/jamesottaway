@@ -10,4 +10,8 @@ helpers do
   def email(address, text = address)
     "<a href='#{address}'>#{text}</a>"
   end
+  
+  def site(href, text, id)
+    "<a href='#{href}' id='#{id}'>#{text}</a>"
+  end
 end
