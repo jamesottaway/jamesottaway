@@ -49,7 +49,7 @@ a:hover {
 	list-style-type: none;
 }
 
-#online a {
+#online li {
 	display: block;
 	float: left;
 	margin: 5px;
