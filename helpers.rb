@@ -8,7 +8,7 @@ helpers do
   end
   
   def email(address, text = address)
-    "<a href='#{address}'>#{text}</a>"
+    "<a href='mailto:#{address}'>#{text}</a>"
   end
   
   def site(href, text, id = to_slug(text))
