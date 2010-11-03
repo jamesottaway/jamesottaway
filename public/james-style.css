@@ -49,10 +49,8 @@ a:hover {
 }
 
 #online li {
-	display: block;
 	float: left;
 	margin: 5px;
-	position: relative;
 	width: 150px;
 }
 
