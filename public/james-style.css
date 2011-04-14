@@ -5,6 +5,7 @@ html {
 body {
 	color: #272727;
 	font-family: Courier New, monospace;
+	background-color: white;
 }
 
 #bio, #work, #contactme {
