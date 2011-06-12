@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/view_helpers'
 require 'haml'
-require 'helpers'
 
 get '/' do
   haml :index
