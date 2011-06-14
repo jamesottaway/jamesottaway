@@ -14,19 +14,16 @@ module Sinatra
       "<a href='mailto:#{address}'>#{text}</a>"
     end
 
-    def site(href, text, id = to_slug(text))
+    def site(href, text)
+      id = to_slug(text)
       "<a href='#{href}' id='#{id}'>#{text}</a>"
     end
 
     private
     
     def to_slug(input)
-      input = input.gsub(/[']+/, '')
-      input = input.gsub(/\W+/, ' ')
-      input = input.strip
-      input = input.downcase
-      input = input.gsub(' ', '-')
-      input
+      input = input.strip.downcase
+      input = input.gsub(/[']+/, '').gsub(/\W+/, ' ').gsub(' ', '-')
     end
   end
 

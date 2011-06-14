@@ -20,7 +20,7 @@ describe Sinatra::ViewHelpers do
   end
   
   describe '#site' do
-    subject { site 'http://here/', 'Here', 'h-e-r-e' }
-    it { should == "<a href='http://here/' id='h-e-r-e'>Here</a>" }
+    subject { site 'http://some/app/', 'Some App' }
+    it { should == "<a href='http://some/app/' id='some-app'>Some App</a>" }
   end
 end
