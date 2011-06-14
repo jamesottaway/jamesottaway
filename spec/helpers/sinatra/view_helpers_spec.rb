@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'sinatra/view_helpers'
+require 'jamesottaway/view_helpers'
 
-include Sinatra::ViewHelpers
+include JamesOttaway::ViewHelpers
 
-describe Sinatra::ViewHelpers do
+describe JamesOttaway::ViewHelpers do
   describe '#css' do
     subject { css 'abc' }
     it { should == { :rel => 'stylesheet', :href => 'abc', :type => 'text/css' } }
