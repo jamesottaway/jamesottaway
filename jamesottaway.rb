@@ -1,6 +1,8 @@
+$: << File.dirname(__FILE__) + '/lib'
+
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/view_helpers'
+require 'jamesottaway/view_helpers'
 require 'haml'
 
 get '/' do

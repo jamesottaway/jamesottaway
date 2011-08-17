@@ -1,2 +1,2 @@
-require 'jamesottaway'
+require './jamesottaway'
 run Sinatra::Application
