@@ -1,20 +1,20 @@
 %html
   %head
     %title James Ottaway
-    =haml(:meta_and_link)
+    =haml :meta_and_link
   %body
     #container
       #main
         #header
-          =haml(:about)
+          =haml :about
         #details
           %h2 bio
-          =haml(:bio)
+          =haml :bio
           %h2 online
-          =haml(:online)
+          =haml :online
           %h2 contact me
-          =haml(:contactme)
+          =haml :contactme
       #footer
         &copy; James Ottaway,
         = Time.now.year
-    =haml(:analytics)
+    =haml :analytics
