@@ -1,13 +1,17 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    childprocess (0.2.1)
+      ffi (~> 1.0.6)
     configuration (1.2.0)
     diff-lcs (1.1.2)
+    ffi (1.0.9)
     haml (3.1.1)
     heroku (2.2.4)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       term-ansicolor (~> 1.0.5)
+    json_pure (1.5.3)
     launchy (0.4.0)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -24,11 +28,21 @@ GEM
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.6.0)
+    rubyzip (0.9.4)
+    selenium-webdriver (2.4.0)
+      childprocess (>= 0.2.1)
+      ffi (>= 1.0.7)
+      json_pure
+      rubyzip
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
     term-ansicolor (1.0.5)
     tilt (1.3.2)
+    watir-page-helper (0.2.0)
+      watir-webdriver (>= 0.2.0)
+    watir-webdriver (0.3.1)
+      selenium-webdriver (>= 0.2.2)
 
 PLATFORMS
   ruby
@@ -38,3 +52,5 @@ DEPENDENCIES
   heroku
   rspec
   sinatra
+  watir-page-helper
+  watir-webdriver
