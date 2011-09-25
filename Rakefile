@@ -5,12 +5,12 @@ require 'timeout'
 
 namespace :spec do
   RSpec::Core::RakeTask.new 'acceptance' do |t|
-    t.pattern = "./spec/acceptance/**/*.rb"
+    t.pattern = "./spec/acceptance/**/*_spec.rb"
     t.rspec_opts = ['--colour']
   end
 
   RSpec::Core::RakeTask.new 'helpers' do |t|
-    t.pattern = "./spec/helpers/**/*.rb"
+    t.pattern = "./spec/helpers/**/*_spec.rb"
     t.rspec_opts = ['--colour']
   end
 end
