@@ -15,25 +15,33 @@ namespace :spec do
   end
 end
 
-desc 'Run all specs'
-task :spec do
+task :helpers do
+  Rake::Task['spec:helpers'].execute
+end
+
+task :acceptance do
   pid = Process.spawn 'rackup'
 
   trap("INT") {
     Process.kill(9, pid) rescue Errno::ESRCH
     exit 0
   }
-
+  
   until is_port_open?('localhost', '9292') do
     puts "Waiting for server to start listening..."
     sleep 1
   end
-
-  ['helpers', 'acceptance'].each do |task|
-    Rake::Task["spec:#{task}"].execute
-  end
+  
+  Rake::Task['spec:acceptance'].execute
   
   Process.kill 9, pid
+end
+
+desc 'Run all specs'
+task :spec do
+  ['helpers', 'acceptance'].each do |task|
+    Rake::Task[task].execute
+  end
 end
 
 private
