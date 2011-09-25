@@ -9,7 +9,7 @@ RSpec.configure do |config|
   config.mock_with :rspec
 end
 
-BROWSER = Watir::Browser.new ENV['WEB_DRIVER'] || :firefox
+BROWSER = Watir::Browser.new ENV['WEB_DRIVER'] || :chrome
 
 def visit page_class, &block
   on page_class, true, &block
