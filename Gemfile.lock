@@ -17,6 +17,10 @@ GEM
     ffi (1.0.9)
     flat_hash (0.1.0)
       grit (~> 2)
+    fuubar (0.0.6)
+      rspec (~> 2.0)
+      rspec-instafail (~> 0.1.8)
+      ruby-progressbar (~> 0.0.10)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -43,7 +47,9 @@ GEM
     rspec-core (2.6.4)
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
+    rspec-instafail (0.1.8)
     rspec-mocks (2.6.0)
+    ruby-progressbar (0.0.10)
     rubyzip (0.9.4)
     selenium-webdriver (2.4.0)
       childprocess (>= 0.2.1)
@@ -68,6 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   cardigan
+  fuubar
   haml
   heroku
   rspec
