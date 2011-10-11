@@ -3,6 +3,8 @@ require 'rspec/core/rake_task'
 require 'socket'
 require 'timeout'
 
+task :default => :spec
+
 namespace :spec do
   RSpec::Core::RakeTask.new 'acceptance' do |t|
     t.pattern = "./spec/acceptance/**/*_spec.rb"
