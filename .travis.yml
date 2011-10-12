@@ -2,5 +2,5 @@ rvm: 1.9.2
 before_script:
   - ./travis.sh
 env:
-  - WEB_DRIVER=firefox
-  - WEB_DRIVER=chrome
+  - WEB_DRIVER=firefox DISPLAY=:99.0
+  - WEB_DRIVER=chrome DISPLAY=:99.0
