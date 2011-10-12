@@ -1,1 +1,1 @@
-Build Status: [![Build Status](https://secure.travis-ci.org/jamesottaway/jamesottaway.png)](http://travis-ci.org/jamesottaway/jamesottaway)
+[![Build Status](https://secure.travis-ci.org/jamesottaway/jamesottaway.png)](http://travis-ci.org/jamesottaway/jamesottaway)
