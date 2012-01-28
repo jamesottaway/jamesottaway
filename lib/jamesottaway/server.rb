@@ -1,3 +1,5 @@
+$: << File.dirname(__FILE__)
+
 require 'sinatra/base'
 require 'view_helpers'
 require 'haml'
