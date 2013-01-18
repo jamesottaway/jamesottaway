@@ -14,7 +14,7 @@ module JamesOttaway
       "<a href='mailto:#{address}'>#{text}</a>"
     end
 
-    def site href, text
+    def link href, text
       id = to_slug text
       "<a href='#{href}' id='#{id}'>#{text}</a>"
     end

@@ -19,8 +19,8 @@ describe JamesOttaway::ViewHelpers do
     it { should == "<a href='mailto:a@b.com'>Mr A. B</a>" }
   end
   
-  describe '#site' do
-    subject { site 'http://some/app/', 'Some App' }
+  describe '#link' do
+    subject { link 'http://some/app/', 'Some App' }
     it { should == "<a href='http://some/app/' id='some-app'>Some App</a>" }
   end
 end
