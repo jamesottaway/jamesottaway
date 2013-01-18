@@ -69,3 +69,13 @@ ul {
 	margin-top: 0px;
 	padding-left: 15px;
 }
+
+dl dt {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+}
+
+dl dd {
+  margin: 5px 0;
+}
