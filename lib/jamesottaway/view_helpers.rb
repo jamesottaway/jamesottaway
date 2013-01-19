@@ -11,11 +11,11 @@ module JamesOttaway
     end
 
     def email address, text = address
-      "<a href='mailto:#{address}'>#{text}</a>"
+      link("mailto:#{address}", text)
     end
 
     def xmpp address, text = address
-      "<a href='xmpp:#{address}'>#{text}</a>"
+      link("xmpp:#{address}", text)
     end
 
     def link href, text
