@@ -25,6 +25,6 @@ describe JamesOttaway::ViewHelpers do
 
   describe '#link' do
     subject { link 'http://some/app/', 'Some App' }
-    it { should == "<a href='http://some/app/' id='some-app'>Some App</a>" }
+    it { should == "<a href='http://some/app/'>Some App</a>" }
   end
 end

@@ -19,15 +19,7 @@ module JamesOttaway
     end
 
     def link href, text
-      id = to_slug text
-      "<a href='#{href}' id='#{id}'>#{text}</a>"
-    end
-
-    private
-    
-    def to_slug input
-      input = input.strip.downcase
-      input = input.gsub(/[']+/, '').gsub(/\W+/, ' ').gsub(' ', '-')
+      "<a href='#{href}'>#{text}</a>"
     end
   end
 
