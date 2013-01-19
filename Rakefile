@@ -11,15 +11,13 @@ namespace :spec do
     t.rspec_opts = ['--colour', '--format Fuubar']
   end
 
-  RSpec::Core::RakeTask.new 'helpers' do |t|
-    t.pattern = "./spec/helpers/**/*_spec.rb"
+  RSpec::Core::RakeTask.new 'unit' do |t|
+    t.pattern = "./spec/unit/**/*_spec.rb"
     t.rspec_opts = ['--colour', '--format Fuubar']
   end
 end
 
-task :helpers do
-  Rake::Task['spec:helpers'].execute
-end
+task :unit => 'spec:unit'
 
 task :acceptance do
   pid = Process.spawn 'rackup'
@@ -40,11 +38,7 @@ task :acceptance do
 end
 
 desc 'Run all specs'
-task :spec do
-  ['helpers', 'acceptance'].each do |task|
-    Rake::Task[task].execute
-  end
-end
+task :spec => [:unit, :acceptance]
 
 private
 
