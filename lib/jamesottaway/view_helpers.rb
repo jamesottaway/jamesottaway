@@ -14,6 +14,10 @@ module JamesOttaway
       "<a href='mailto:#{address}'>#{text}</a>"
     end
 
+    def xmpp address, text = address
+      "<a href='xmpp:#{address}'>#{text}</a>"
+    end
+
     def link href, text
       id = to_slug text
       "<a href='#{href}' id='#{id}'>#{text}</a>"
