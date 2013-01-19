@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'haml'
 
+gem 'rake', :group => :development
 gem 'cardigan', :group => :development
 
 gem 'rspec', :group => :test
